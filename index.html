@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ToDoList.css">
+    <script
+      src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div id="outer">
+        <div id="container">
+
+            <!-- todo list input with add button -->
+            <div id="input">
+                <i class="fa-regular fa-note-sticky" id="notes"></i>
+                <input type="text" id="newTask" placeholder="Type your todo list" />
+                <!-- <button onclick="addTask()"> -->
+                    <i class="fa-solid fa-circle-plus" onclick="addTask()" id="add-button"></i>
+                <!-- </button> -->
+            </div>
+    
+            <!-- Complete & clear task -->
+            <div id="notation">
+                <p id="complete">complete all tasks</p>
+                <p id="clear">clear completed</p>
+            </div>
+
+            <!-- task List -->
+            <ul type="circle" id="List"></ul>
+
+            <!-- task Left -->
+            <p>Tasks Left: <span id="count">0</span></p>
+
+        </div>
+    </div>
+
+
+    <script src="ToDoList.js"></script>
+</body>
+</html>
